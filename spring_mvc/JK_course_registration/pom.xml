@@ -1,0 +1,145 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+						https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>JK_course_registration</groupId>
+	<artifactId>JK_course_registration</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.3</version>
+			</plugin>
+		</plugins>
+	</build>
+	<!--라이브러리 버전관리-->
+	<properties>
+		<!--Servlet-->
+		<jakarta.servlet-version>4.0.4</jakarta.servlet-version>
+		<!--Jsp-->
+		<javax.servlet.jsp-version>2.3.3</javax.servlet.jsp-version>
+		<!--Jstl-->
+		<javax.servlet.jsp.jstl-version>1.2</javax.servlet.jsp.jstl-version>
+		<!--SpringMVC-->
+		<org.springframework-version>5.3.18</org.springframework-version>
+		<!--<org.springframework-version>4.3.18.RELEASE</org.springframework-version>-->
+		<!--javax.annotation-->
+		<javax.annotation-version>1.3.2</javax.annotation-version>
+		<!--validation : 유효성 검사 표준-->
+		<javax.validation-version>2.0.1.Final</javax.validation-version>
+		<!--hibernate.validator : 유효성 검사 구현체-->
+		<org.hibernate.validator-version>6.2.0.Final</org.hibernate.validator-version>
+		<!--spring-jdbc-->
+		<spring-jdbc-version>5.3.18</spring-jdbc-version>
+		<!--Apache Commons DBCP-->
+		<org.apache.commons-version>2.9.0</org.apache.commons-version>
+		<!--mybatis-->
+		<mybatis-version>3.5.6</mybatis-version>
+		<!--mybatis-spring-->
+		<mybatis-spring-version>2.0.6</mybatis-spring-version>
+		<!--jackson : 객체나 리스트를 json데이터로 만들어주는 라이브러리-->
+		<jackson-databind-version>2.14.2</jackson-databind-version>
+	</properties>
+	
+	<!--라이버러리 셋팅-->
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+		<dependency>
+		    <groupId>jakarta.servlet</groupId>
+		    <artifactId>jakarta.servlet-api</artifactId>
+		    <version>${jakarta.servlet-version}</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+		<dependency>
+		    <groupId>javax.servlet.jsp</groupId>
+		    <artifactId>javax.servlet.jsp-api</artifactId>
+		    <version>${javax.servlet.jsp-version}</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>${javax.servlet.jsp.jstl-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+		<dependency>
+		    <groupId>javax.annotation</groupId>
+		    <artifactId>javax.annotation-api</artifactId>
+		    <version>${javax.annotation-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+		<dependency>
+		    <groupId>javax.validation</groupId>
+		    <artifactId>validation-api</artifactId>
+		    <version>${javax.validation-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+		<dependency>
+		    <groupId>org.hibernate.validator</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>${org.hibernate.validator-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${spring-jdbc-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-dbcp2</artifactId>
+		    <version>${org.apache.commons-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>${mybatis-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>${mybatis-spring-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>${jackson-databind-version}</version>
+		</dependency>
+
+
+
+	</dependencies>
+</project>

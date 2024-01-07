@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   						http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean class="com.woomin.beans.DataBean1" scope="request"/>
+	<!--xml에서 byName으로 주입 받았을 경우에만 request 영역에 자동 저장된다. -->
+	<bean class="com.woomin.beans.DataBean2" id="requestBean2" scope="request"/>				
+</beans>

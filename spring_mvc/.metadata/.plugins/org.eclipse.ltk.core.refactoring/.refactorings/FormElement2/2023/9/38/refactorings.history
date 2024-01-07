@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.woomin.beans.KetValueBean&apos; to &apos;KeyValueBean&apos;&#x0D;&#x0A;- Original project: &apos;FormElement2&apos;&#x0D;&#x0A;- Original element: &apos;com.woomin.beans.KetValueBean&apos;&#x0D;&#x0A;- Renamed element: &apos;com.woomin.beans.KeyValueBean&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;KetValueBean&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.woomin.beans{KetValueBean.java[KetValueBean" matchStrategy="1" name="KeyValueBean" qualified="false" references="true" similarDeclarations="false" stamp="1694954366006" textual="false" version="1.0"/>
+</session>
