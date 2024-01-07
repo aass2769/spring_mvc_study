@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- servlet-context.xml은 SpringMVC에 관련된 Bean들을 정의하고 설정하는 작업을함 -->
-<beans:beans xmlns="http://www.springframework.org/schema/mvc"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xmlns:beans="http://www.springframework.org/schema/mvc"
-</beans:beans>
