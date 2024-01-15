@@ -1,3 +1,7 @@
+# :page_with_curl:Study
+Spring MVC를 공부하며 각 프로젝트를 구분하고 정리했습니다.<br><br><br><br>
+
+#  :file_folder:Project
 :pencil2:  **ServletMVC :** 
 
 	Servlet-Controller, View-jsp, model-java 를 통한 MVC 구조 이해
