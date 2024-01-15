@@ -67,11 +67,11 @@ Spring MVC를 공부하며 각 프로젝트를 구분하고 정리했습니다.<
 		
 :pencil2: **FormElement1 :**
 
-	<form:>태그의 hidden, input, password,textarea, button에 대해서
+	<form:>태그의 hidden, input, password,textarea, button에 대해서 공부한 내용.
 
 :pencil2: **FormElement1 :**
 	
- 	<form:>태그의 select, checkbox, radiobutton에 대해서
+ 	<form:>태그의 select, checkbox, radiobutton에 대해서 공부한 내용.
 
 :pencil2: **RedirectForward :**
 
