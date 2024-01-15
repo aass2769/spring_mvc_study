@@ -107,7 +107,7 @@ Spring MVC를 공부하며 각 프로젝트를 구분하고 정리했습니다.<
 
 :pencil2: **SessionScopeBeanJava :**
 
-	Bean을 정의할 떄 @SessionScope로 정의하면 브라우저가 서버에 최초의 요청을 보낼 떄 객체가 주입된다.
+	Bean을 정의할 떄 @SessionScope로 정의하면 브라우저가 서버에 최초의 요청을 보낼 때 객체가 주입된다.
 	주입된 Bean은 주입만 이루어지므로 session 영역에 저장되지 않는다.
 	model에 담고 jsp에서 requestScope로 받아서 사용한다.
 
@@ -115,7 +115,7 @@ Spring MVC를 공부하며 각 프로젝트를 구분하고 정리했습니다.<
 
 	Bean을 정의할 때 Scope="session"으로 정의하면 브라우저가 서버에 최초의 요청을 보낼 때 Bean 객체가 주입된다.
 	느낀점 : 무슨이유에서인지 Resource로 sessionBean2로 주입받은 빈은 session영역에 저장이 되어 jsp에서 sessionScope.으로 받을 수 있었다.
-	또한 컴포넌트로 스캔한 애들은 lazy를 넣어주지 않아도 오류가 나지않았다. 나머지는 lazy하지 않으면 오류가생긴다.
+	또한 컴포넌트로 스캔한 애들은 lazy를 넣어주지 않아도 오류가 나지않았다. 나머지는 lazy하지 않으면 오류가 생긴다.
 
 :pencil2: **ApplicationScope :**
 
@@ -135,7 +135,7 @@ Spring MVC를 공부하며 각 프로젝트를 구분하고 정리했습니다.<
 :pencil2: **Cookie :** 
 
 	servlet,jsp에서는 쿠키를 인코딩 디코딩해야하며 원하는 쿠키를 꺼낼 수 없고 꺼낼 때 반복문을 돌려서 꺼내야하는 번거로움이 있지만,
-	spring에서 제공하는 @CookieValue 어노테이션을 사용하여 쿠키이름으로 주입받으면 원하는 쿠키를 바로 받을 수 있고 디코딩도 하지 않아두된다.
+	spring에서 제공하는 @CookieValue 어노테이션을 사용하여 쿠키 이름으로 주입받으면 원하는 쿠키를 바로 받을 수 있고 디코딩도 하지 않아도 된다.
 
 :pencil2: **Properties :**
 
